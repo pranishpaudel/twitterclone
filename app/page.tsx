@@ -9,6 +9,7 @@ import { LiaTwitterSquare } from "react-icons/lia";
 import { CiCircleMore } from "react-icons/ci";
 import "./globals.css";
 import React from "react";
+import { FeedCard } from "@/components/FeedCard/index";
 
 interface TwitterSidebarButton {
   title: string;
@@ -56,7 +57,7 @@ export default function Home() {
           <div className="text-4xl h-fit text-white hover:bg-gray-600 rounded-full p-1 cursor-pointer transition-all w-fit">
             <FaTwitter />
           </div>
-          <div className="mt-4">
+          <div className="mt-4 pr-4">
             <ul>
               {sidebarMenuItems.map((item) => (
                 <li
@@ -68,9 +69,20 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+            <div className="mx-4 mt-5  pr-3 mr-5">
+              <button className="text-white text-lg  font-semibold bg-sky-500 p-3 w-full rounded-full">
+                Tweet
+              </button>
+            </div>
           </div>
         </div>
-        <div className="col-span-6 border-r-[1px] border-l-[1px] border-r-slate-500 border-l-slate-500"></div>
+        <div className="col-span-6 border-r-[1px] border-l-[1px] border-gray-600">
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+        </div>
         <div className="col-span-3"></div>
       </div>
     </div>
