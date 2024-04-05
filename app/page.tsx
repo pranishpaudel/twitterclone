@@ -5,6 +5,7 @@ import { IoNotificationsOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { PiBookmarkSimple } from "react-icons/pi";
 import { IoPersonOutline } from "react-icons/io5";
+import ComGoogle from "@/components/google/index";
 import { LiaTwitterSquare } from "react-icons/lia";
 import { CiCircleMore } from "react-icons/ci";
 import "./globals.css";
@@ -15,6 +16,7 @@ interface TwitterSidebarButton {
   title: string;
   icon: React.ReactNode;
 }
+
 const sidebarMenuItems: TwitterSidebarButton[] = [
   {
     title: "Home",
@@ -52,7 +54,7 @@ const sidebarMenuItems: TwitterSidebarButton[] = [
 export default function Home() {
   return (
     <div>
-      <div className="grid grid-cols-12 h-screen w-screen px-56 bg-black">
+      <div className="grid grid-cols-12 overflow-auto h-screen w-screen px-56 bg-black">
         <div className="col-span-3   pt-8">
           <div className="text-4xl h-fit text-white hover:bg-gray-600 rounded-full p-1 cursor-pointer transition-all w-fit">
             <FaTwitter />
@@ -82,8 +84,15 @@ export default function Home() {
           <FeedCard />
           <FeedCard />
           <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
         </div>
-        <div className="col-span-3"></div>
+        <div className="col-span-3 text-white">
+          <ComGoogle />
+        </div>
       </div>
     </div>
   );
