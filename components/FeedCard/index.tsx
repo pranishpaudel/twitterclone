@@ -20,7 +20,7 @@ export const FeedCard: React.FC = () => {
         <div className="col-span-11">
           <h5 className="font-semibold ml-1">Piyush Garg</h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            Lorem gipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           </p>
